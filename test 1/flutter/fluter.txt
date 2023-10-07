@@ -1,0 +1,12 @@
+Ket = Saya tidak Terlalu Faham bahkan hanya sekedar mempelajari sedikit tanpa menekuni Flutter 
+        Jadi Jawaban Yang saya berikan bisa berupa apa yang saya Tahu Atau yang Saya cari di internet. terimakasih
+
+Soal Flutter nomor 19
+perbedaan Statefull Widget dan Stateless Widget
+- Stateless di mana konfigurasi dari sebuah widget di inisiasi sejak awal atau statis.
+- Statefull konfigurasi dari sebuah widget di inisiasi secara dinamis sehingga widget ini akan berubah 
+    ketika dibutuhkan bedasarkan user action.
+
+Soal Flutter Nomor 20
+Sebutkan nama method yang ada di State object yang jika dipanggil mengakibatkan UI di-update.
+- yaitu method setState()

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal JS no 18</title>
+    <style>
+        .btn{
+            padding: 15px;
+            background-color: green;
+            color: white;
+            border-radius:10px ;
+        }
+    </style>
+</head>
+<body>
+    <div ><button class="btn"  onclick="rubah()">klik sekali</button></div>
+    <div id="one"><h1>Satu</h1></div>
+
+    <script>
+        function rubah(){
+        var one = document.getElementById('one');
+
+        one.innerHTML='<h1>Dua</h1>';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Ignore all C# files
+*.cs
+
+# Ignore all files in the .vs folder, except for the .gitignore file
+!.vs/
+!.vs/.gitignore
