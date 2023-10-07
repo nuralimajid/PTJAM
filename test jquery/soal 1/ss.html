@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin
+
+    </style>
+</head>
+<body>
+    <form action="form_action.php" method="post">
+  <div class="form-container">
+    <div class="form-group">
+      <label for="nama">Nama</label>
+      <input type="text" name="nama" id="nama" placeholder="Masukkan nama Anda">
+    </div>
+    <div class="form-group">
+      <label for="tempat_lahir">Tempat Lahir</label>
+      <input type="text" name="tempat_lahir" id="tempat_lahir" placeholder="Masukkan tempat lahir Anda">
+    </div>
+    <div class="form-group">
+      <label for="tanggal_lahir">Tanggal Lahir</label>
+      <input type="date" name="tanggal_lahir" id="tanggal_lahir">
+    </div>
+    <div class="form-group">
+      <label for="alamat">Alamat</label>
+      <input type="text" name="alamat" id="alamat" placeholder="Masukkan alamat Anda">
+    </div>
+    <div class="form-group">
+      <label for="jenis_kelamin">Jenis Kelamin</label>
+      <div class="radio-group">
+        <input type="radio" name="jenis_kelamin" id="jenis_kelamin_laki-laki" value="Laki-laki">
+        <label for="jenis_kelamin_laki-laki">Laki-laki</label>
+        <input type="radio" name="jenis_kelamin" id="jenis_kelamin_perempuan" value="Perempuan">
+        <label for="jenis_kelamin_perempuan">Perempuan</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="status_pernikahan">Status Pernikahan</label>
+      <select name="status_pernikahan" id="status_pernikahan">
+        <option value="Pilih">Pilih</option>
+        <option value="Belum Menikah">Belum Menikah</option>
+        <option value="Menikah">Menikah</option>
+        <option value="Bercerai">Bercerai</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="hobi">Hobi</label>
+      <div class="checkbox-group">
+        <input type="checkbox" name="hobi[]" id="hobi_membaca" value="Membaca">
+        <label for="hobi_membaca">Membaca</label>
+        <input type="checkbox" name="hobi[]" id="hobi_memancing" value="Memancing">
+        <label for="hobi_memancing">Memancing</label>
+        <input type="checkbox" name="hobi[]" id="hobi_olahraga" value="Olahraga">
+        <label for="hobi_olahraga">Olahraga</label>
+        <input type="checkbox" name="hobi[]" id="hobi_belanja" value="Belanja">
+        <label for="hobi_belanja">Belanja</label>
+        <input type="checkbox" name="hobi[]" id="hobi_main_game" value="Main Game">
+        <label for="hobi_main_game">Main Game</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Submit">
+    </div>
+  </div>
+</form>
+
+</body>
+</html>

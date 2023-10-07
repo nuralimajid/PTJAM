@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pilih Warna</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 5px;
+        padding: 40px;
+        border: 2px solid black;
+      }
+      .panel-kiri {
+        width: 40rem;
+        height: 50rem;
+        border: 1px solid black;
+      }
+      .panel-kanan {
+        width: 40rem;
+        height: 50rem;
+        border: 1px solid black;
+        text-align: center;
+      }
+      #color-display {
+        width: 15rem;
+        height: 15rem;
+        margin: 20px;
+        border-radius: 9px;
+      }
+      #color-info {
+        width: 11rem;
+        height: 15rem;
+        margin: 20px;
+      }
+      span {
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .color-box {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        display: inline-block;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Warna Warni</h1>
+    </div>
+    <hr />
+    <label for="color-list">Pilih Warna:</label>
+    <select id="color-list">
+      <option value="darkred">Dark Red</option>
+      <option value="red">Red</option>
+      <option value="orange">Orange</option>
+      <option value="yellow">Yellow</option>
+      <option value="lightgreen">Light Green</option>
+      <option value="green">Green</option>
+      <option value="lightblue">Light Blue</option>
+      <option value="blue">Blue</option>
+      <option value="darkblue">Dark Blue</option>
+      <option value="purple">purple</option>
+    </select>
+    <button id="setColor">Tambah Warna</button>
+    <button id="delete" onclick="reset()">Hapus Warna</button>
+    <div class="container">
+      <div class="panel-kiri">
+        <div id="color-layout"></div>
+      </div>
+
+      <div class="panel-kanan">
+        <div id="color-display"></div>
+        <div id="color-info">
+          <p>Warna : <span id="color-name"></span></p>
+          <p>Kode : <span id="color-code"></span></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js">
+      
+    </script>
+  </body>
+</html>
